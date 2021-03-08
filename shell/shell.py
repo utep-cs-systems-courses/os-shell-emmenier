@@ -34,7 +34,7 @@ def execute(args):
             os.write(1, ("cd %s: No such file or directory" % args[1]).encode())
             pass
     elif "|" in args:
-        #insert method here
+        pipe(args)
 
     else:
         rc = os.fork()
